@@ -26,7 +26,6 @@
 .movieBox {
   width: 500px;
   height: 320px;
-  margin: 0px 20px;
   margin: 0px 20px 50px 20px;
 
   background-color: rgb(240, 240, 240);
@@ -76,4 +75,33 @@
 .mr .mr__summary {
   font-size: 15px;
   color: #333;
+}
+
+.typeArea {
+  margin: 50px 0px;
+}
+
+.typeArea button {
+  outline: none;
+  background: none;
+  border: none;
+
+  width: 200px;
+  height: 25px;
+
+  background-color: rgb(212, 240, 252);
+  box-shadow: #999;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.typeArea button:hover {
+  background-color: skyblue;
+  color: #fff;
+}
+
+.typeArea button.active {
+  background-color: royalblue;
+  color: #fff;
 }

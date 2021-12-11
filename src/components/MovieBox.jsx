@@ -8,12 +8,17 @@ class MovieBox extends React.Component {
     return (
       <div className="movieBox">
         <div className="movieBox__left">
-          <img src={this.props.movie.poster} alt="poster" />
+          <img
+            src={`https://image.tmdb.org/t/p/w500${this.props.movie.poster_path}`}
+            alt="poster"
+          />
         </div>
         <div className="movieBox__right mr">
           <article className="mr__title">{this.props.movie.title}</article>
-          <article className="mr__score">⭐️{this.props.movie.score}</article>
-          <article className="mr__summary">줄거리</article>
+          <article className="mr__score">
+            ⭐️{this.props.movie.vote_average}
+          </article>
+          <article className="mr__summary">{this.props.movie.overview}</article>
         </div>
       </div>
     );
